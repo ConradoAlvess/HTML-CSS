@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    ::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+</style>
+</head>
+<body>
+    
+    <header class="cebeca">
+        <h1>CSS Flexbox: como criar layouts responsivos de forma simples</h1>
+            
+        <p>
+             Ao desenvolver uma página web, organizar os elementos de forma adequada pode ser um dos principais desafios. É nesse cenário que o Flexbox, recurso do CSS, se torna uma ferramenta muito útil para criar layouts flexíveis e responsivos.
+        </p>
+    </header>
+
+    <section class="secao">
+
+        <h2>O que é Flexbox?</h2>
+
+        <p>
+            Flexbox, ou Flexible Box Layout, é um modelo de layout do CSS criado para facilitar o posicionamento, alinhamento e distribuição de elementos dentro de um container.
+
+            Com poucas propriedades, podemos organizar elementos horizontalmente ou verticalmente, controlar os espaços entre eles e fazer com que se adaptem a diferentes tamanhos de tela.
+            Para utilizar o Flexbox, basta definir:
+
+            .container {
+                display: flex;
+            }
+            A partir desse momento, os elementos filhos de .container passam a fazer parte de um layout flexível.
+        </p>
+
+        <h2>flex-direction</h2>
+        
+        <p>
+            Define a direção em que os elementos serão organizados.
+
+            .container {
+            display: flex;
+            flex-direction: row;
+            }
+
+            Com row, os elementos ficam organizados horizontalmente.
+
+            Também podemos utilizar:
+
+            flex-direction: column;
+
+            Nesse caso, os elementos serão organizados verticalmente.
+        </p>
+
+        <h2>justify-content</h2>
+
+        <p>
+            Controla o posicionamento dos elementos no eixo principal.
+
+            .container {
+                display: flex;
+                justify-content: center;
+            }
+
+            Alguns valores bastante utilizados são:
+
+            flex-start — início
+            center — centro
+            flex-end — final
+            space-between — distribui os elementos pelo espaço disponível
+            space-around — adiciona espaço ao redor dos elementos
+            space-evenly — distribui os espaços de maneira uniforme
+        </p>
+
+        <h2>align-items</h2>
+
+        <p>
+            Controla o alinhamento dos elementos no eixo transversal.
+
+            .container {
+                display: flex;
+                align-items: center;
+            }
+
+            Essa propriedade é bastante utilizada para centralizar elementos verticalmente.
+        </p>
+
+        <h2>gap</h2>
+
+        <p>
+           Define o espaço entre os elementos do container.
+
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+
+        Uma vantagem do gap é que não precisamos adicionar margens individualmente em cada elemento. 
+        </p>
+
+    </section>
+
+    <footer class="rodape">
+
+        <h2>Conclusão</h2>
+
+        <p>O Flexbox é uma ferramenta simples de começar, mas extremamente útil no desenvolvimento de interfaces modernas.
+
+        Ao entender propriedades como display, flex-direction, justify-content, align-items, gap e flex-wrap, já é possível construir diversos tipos de layouts.</p>
+
+        <h2>Mais sobre:</h2>
+        <iframe class="video-blog"  src="https://www.youtube.com/embed/Z4CbaGCEsTY?si=pWtGOxjpAJEhZQR6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </footer>
+
+    
+        
+</body>
+</html>

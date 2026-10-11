@@ -1,0 +1,479 @@
+*{
+    margin: 9;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: #2f3e46;
+    min-height: 100vh;
+}
+ /*Lado esquerdo da tela */
+ 
+.apresentar{
+    width: 320px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #283238;
+    box-shadow: 5px 0px 8px rgba(150,137,137,0.3);
+
+}
+
+.foto{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 10px;
+    
+}
+
+.foto img{
+    width: min(170px, 40vw);
+    height: min(170px, 40vw);         
+    border-radius: 50%;    
+    object-fit: cover;
+    border: rgb(34, 49, 136) 2px solid;
+    box-shadow: 5px 5px 8px rgb(13, 50, 85);
+
+}
+
+.nome{
+    text-align: center;
+    color: #e5e5e5;
+}
+
+.btn-contact{
+    background-color: #16db65;
+    color: #fdfffc;
+    text-decoration: none;
+    width: 100%;
+    max-width: 300px;
+    margin: 30px auto;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+    transition: all 2s ease;
+}
+.btn-contact:hover{
+    background-color: #1c3b29;
+    transform: scale(1.1);
+}
+
+.news-latter{
+    padding-top: 20px;
+}
+
+.news-latter h3{
+    color: #fdfffc;
+}
+
+.btn-primario{
+    background-color: #16db65;
+    color: #fdfffc;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.5s ease;
+}
+.btn-primario:hover{
+    background-color: #1c3b29;
+    transform: scale(1.1);
+}
+
+.input{
+    background-color: transparent; 
+    border: none;                  
+    border-bottom: 2px solid #a3a7aa;
+    color: #a3a7aa;                  
+    outline: none;                 
+    padding: 10px;
+}
+
+.footer-section{
+    padding-top: 60px;
+   
+    
+    
+}
+
+.link-git{
+    display: inline-block;
+    color: #cce6f4;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 1s ease;
+}
+
+.link-insta{
+    display: inline-block;
+    color: #cce6f4;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 1s ease;
+}
+
+.link-linke{
+    display: inline-block;
+    color: #cce6f4;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 1s ease;
+}
+
+.link-git:hover{
+    transform: scale(2);
+    color: #0b0b0e;
+}
+
+.link-insta:hover{
+    transform: scale(2);
+    color: #8d099e;
+}
+
+.link-linke:hover{
+    transform: scale(2);
+    color: #0408eb;
+}
+/*Lado esquerdo da tela */
+
+/*Nav*/
+
+.mid{
+    display: flex;
+    justify-content: center;
+    margin-left: 320px;
+    width: calc(100% - 320px);
+    padding-top: 20px ;
+}
+
+.navegacao{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.navegacao a{
+    padding: 16px;
+    text-decoration: none;
+    background-color: #0c1724;
+    color: #618bb6;
+    border-radius: 10px;
+    margin-right: 5px;
+    transition: all 1s ease;
+    
+}
+
+.navegacao a:hover{
+    transform: scale(1);
+    color: #bbee9e;
+    background-color: #3f787c;
+    font-size: 20px;
+}
+/*Nav*/
+
+/*iframe*/
+
+iframe{
+    
+    display: block;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    height: 70vh;
+    margin: 20px auto;
+    margin-top: 80px;
+    border: none;
+}
+
+
+/*iframe*/
+
+/*sobre*/
+
+.sobre h1{
+    text-align: center;
+    color: #cce6f4;
+}
+
+.sobre p{
+    color: #cce6f4;
+}
+
+#p-center{
+    text-align: center;
+}
+
+#p-tam{
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.destaque{
+    color: #16a0ce;
+}
+
+.name{
+    color: #6a040f;
+}
+
+/*sobre*/
+
+/*curriculo*/
+
+.curriculo h1{
+    text-align: center;
+    color: #618bb6;
+}
+
+.curriculo h2{
+    color: #131211;
+    margin-left: 5px;
+}
+
+.curriculo p{
+    margin-left: 5px;
+    color: #a19f97;
+}
+
+.curriculo li{
+    color: #a19f97;
+}
+
+#li-cor{
+    color: #141411;
+}
+
+/*curriculo*/
+
+/*blog*/
+
+.cebeca h1{
+    color: #cad2c5;
+}
+
+.cebeca p{
+    color: #1487a3;
+    
+}
+
+.secao h2{
+    color: #cad2c5;
+    margin-left: 10px;
+}
+.secao p{
+    color: #1487a3;
+    margin-left: 8px;
+    
+}
+
+.rodape h2{
+    margin-left: 10px;
+    color: #cad2c5;
+}
+.rodape p{
+    color: #50aa18;
+    margin-left: 8px;
+}
+
+.video-blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 600px;
+    height: 300px;
+}
+/*blog*/
+
+/*fotos*/
+.fotos h1{
+    color: #cad2c5;
+    text-align: center;
+}
+
+.motos{
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-around;
+    gap: 15px;
+    
+}
+
+.carros{
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+.super-heroi{
+    display: flex;
+    flex-direction: wrap;
+    justify-content: end;
+    gap: 15px;
+}
+
+.jogadores{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+}
+
+.motos img,
+.carros img,
+.super-heroi img,
+.jogadores img{
+    width: 100px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*fotos*/
+
+/*contato*/
+.fundo-branco{
+    background-image: url(fotos/8138249-simples-branco-ondulado-forma-fundo-em-um-estilo-minimalista-dinamico-onda-torcida-ilustracao-decorativa-vetor.jpg);
+    margin: 0;
+    height: 100vh;
+    overflow: hidden; /* remove o scroll */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form-contato{
+    border: 3px black solid;
+    width: 90%;
+    max-width: 500px;
+    padding: 30px;
+    text-align: center;
+    background-color: rgba(128,128,128,0.5);
+    border-radius: 20px;
+} 
+
+.input-contato{
+    background-color: transparent; 
+    border: none;                  
+    border-bottom: 1px solid #07090a;
+    color: #0a1116;                  
+    outline: none;                 
+    padding: 10px;
+}
+
+.btn-contato{
+     background-color: #209450;
+    color: #030303;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    transition: all 1s ease;
+} 
+
+
+.btn-contato:hover{
+    background-color: #1c3b29;
+    transform: scale(1.1);
+    color: #16db65;
+}
+
+/*contato*/
+
+
+/*sucesseo*/
+
+
+#sucesso-h1{
+    color: #131211;
+}
+#sucesso-h2{
+    color: #131211;
+    
+}
+
+.div-sucesso{
+    display: inline-block;
+    text-align: center;
+    max-width: 700px;
+    padding: 30px;
+    background-color:rgba(128, 128, 128, 0.5);
+    border-radius: 20px;
+    
+    
+}
+
+.link-sucesso{
+    color: #666565;
+    text-decoration: none;
+    font-size: 20px;
+     
+}
+
+#sucesso-a{
+    text-decoration: none;
+    color: #1c3b29;
+    transition: all 1s ease;
+}
+
+#sucesso-a:hover{
+    transform: scale(1.1);
+    color: #16db65;
+}
+
+
+/*sucesseo*/
+
+
+
+/* CELULAR / TABLETS */
+
+
+@media (max-width: 768px){
+
+    .apresentar{
+        position: relative;
+        width: 100%;
+        min-height: auto;
+    }
+
+    .mid{
+        width: 100%;
+        margin-left: 0;
+        left: 0;
+    }
+
+    iframe{
+        width: 100%;
+        margin-left: 0;
+        height: 70vh;
+    }
+
+}
+/* LAPTOPS */
+@media (max-width: 1400px){
+
+.apresentar{
+width: 280px;
+}
+
+.mid,
+.conteudo,
+iframe{
+margin-left: 280px;
+width: calc(100% - 280px);
+}
+}
